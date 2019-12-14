@@ -8,10 +8,11 @@ public class Main {
         int years = 1;
         float balance = deposit * (1 + interestRate); // 500 * (1.015)
         while (balance <= 1000) {
+            System.out.printf("year : %d --> balance = %.2f฿\n", years, balance);
             balance = balance * (1 + interestRate);
             years++;
         }
-        System.out.printf("year : %d --> balance = %.2f฿", years, balance);
+        System.out.printf("year : %d --> balance = %.2f฿\n", years, balance);
     }
     public static void main(String[] args) {
         money();
