@@ -11,8 +11,7 @@ public class Main {
             balance = balance * (1 + interestRate);
             years++;
         }
-        System.out.println(years);
-        System.out.println(balance);
+        System.out.printf("year : %d --> balance = %.2f฿", years, balance);
     }
     public static void main(String[] args) {
         money();
